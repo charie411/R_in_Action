@@ -1,0 +1,4 @@
+states<- as.data.frame(state.x77[,c('Murder','Population','Illiteracy','Income','Frost')])
+library(car)
+scatterplotMatrix(states,spread=False,smoother.args=list(lty=2),main='Scatter Plot Matrix')
+#绘制州府数据中因变量与自变量的散点图矩阵（包含线性和平滑拟合曲线，以及相应的边际分布）
